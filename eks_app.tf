@@ -1,7 +1,3 @@
-provider "kubernetes" {
-  config_path    = "_output/kubeconfig"
-}
-
 
 resource "kubernetes_deployment" "cowrie" {
   depends_on = [module.skg]
