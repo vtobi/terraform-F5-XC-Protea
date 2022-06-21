@@ -85,19 +85,6 @@ locals{
   namespace = var.namespace != "" ? var.namespace : var.name
 }
 
-terraform {
-  required_providers {
-    volterra = {
-      source = "volterraedge/volterra"
-      version = "0.11.5"
-    }
-  }
-}
-
-provider "volterra" {
-  api_p12_file = var.api_p12_file
-  url          = var.api_url
-}
 
 module "skg" {
   source                    = "github.com/vtobi/terraform-F5-XC-secure-k8s-gateway"
