@@ -99,8 +99,8 @@ provider "volterra" {
   url          = var.api_url
 }
 
-module "protea" {
-  source                    = "github.com/vtobi/terraform-F5-XC-Protea"
+module "skg" {
+  source                    = "github.com/vtobi/terraform-F5-XC-secure-k8s-gateway"
   skg_name                  = var.name
   volterra_namespace        = local.namespace
   volterra_namespace_exists = true
