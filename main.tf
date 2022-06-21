@@ -38,15 +38,15 @@ variable "aws_az" {
 
 
 variable "namespace" {
-  default = "protea"
+  default = ""
 }
 
 variable "name" {
-  default = "protea-skg-aws"
+  default = ""
 }
 
 variable "app_fqdn" {
-  default = "protea.sr.f5-demo.com"
+  default = ""
 }
 
 
